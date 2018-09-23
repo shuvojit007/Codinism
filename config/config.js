@@ -1,3 +1,4 @@
 module.exports = {
-    imgur: '81c9941fb465a67',
+    imgur: '81c9941fb465a67'
+
 };
