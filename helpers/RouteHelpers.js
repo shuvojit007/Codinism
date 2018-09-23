@@ -41,8 +41,7 @@ module.exports = {
     },
 
     schemas: {
-
-        postSchema: Joi.object().keys({
+        nameSchema: Joi.object().keys({
             name: Joi.string().required()
         })
     

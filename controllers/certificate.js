@@ -11,7 +11,7 @@ module.exports={
      try {
 
        var imagename= randomstring.generate();
-        var loadedImage = await jimp.read("https://i.imgur.com/0a3MQlT.png");
+        var loadedImage = await jimp.read(fileName);
         var font = await jimp.loadFont(jimp.FONT_SANS_128_BLACK);
         await loadedImage.print(font, loadedImage.bitmap.width-1100,1300,req.body.name).resize(800, jimp.AUTO).write(imagename+".png");
         var result = await imgur.uploadFile(imagename+".png")
