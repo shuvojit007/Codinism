@@ -8,7 +8,7 @@ module.exports={
      try {
         var loadedImage = await jimp.read(fileName);
         var font = await jimp.loadFont(jimp.FONT_SANS_128_BLACK);
-        await loadedImage.print(font, loadedImage.bitmap.width-1000,1300,req.body.name).resize(800, jimp.AUTO).write('output.png');
+        await loadedImage.print(font, loadedImage.bitmap.width-1000,1300,req.body.name).resize(1000, jimp.AUTO).write('output.png');
         var result = await imgur.uploadFile("output.png")
         res.status(200).send(result.data.link)
     } catch(e) {
