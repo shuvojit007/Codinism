@@ -1,0 +1,20 @@
+{
+  "name": "ProgrammingHero",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon App.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-promise-router": "^3.0.3",
+    "firebase-admin": "^6.0.0",
+    "googleapis": "27",
+    "imgur": "^0.2.1",
+    "jimp": "^0.5.0",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.4"
+  }
+}
