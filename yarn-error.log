@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add randmonstring
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\xampp\mysql\bin\mysqld.exe;C:\xampp\mysql\bin;c:\xampp\mysql\bin\mysqld.exe --defaults-file=c:\xampp\mysql\bin\my.ini mysql;c:\xampp\mysql\bin\my.ini\mysql;C:\Python3x;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin;C:\Program Files\MongoDB\Server\3.4\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\SHOBOJIT\AppData\Local\GitHubDesktop\bin;C:\Users\SHOBOJIT\AppData\Local\atom\bin;C:\Program Files\Heroku\bin;C:\Users\SHOBOJIT\AppData\Roaming\npm;C:\Users\SHOBOJIT\AppData\Local\Yarn\bin;C:\adb;E:\CSE\matlab\bin;E:\CSE\matlab\bin\win64;C:\Program Files\Redis\;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Gradle\gradle-4.10\bin;C:\Program Files\MongoDB\Server\3.4\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\SHOBOJIT\AppData\Local\atom\bin;C:\Program Files\Heroku\bin;C:\Users\SHOBOJIT\AppData\Roaming\npm;C:\Users\SHOBOJIT\AppData\Local\Yarn\bin;C:\Users\SHOBOJIT\AppData\Local\Microsoft\WindowsApps
@@ -27,16 +27,14 @@ npm manifest:
       "compression": "^1.7.3",
       "express": "^4.16.3",
       "express-promise-router": "^3.0.3",
-      "firebase-admin": "^6.0.0",
       "fs-extra": "^7.0.0",
-      "googleapis": "27",
       "helmet": "^3.13.0",
       "imgur": "^0.2.1",
       "jimp": "^0.5.0",
       "joi": "^13.6.0",
       "morgan": "^1.9.1",
       "nodemon": "^1.18.4",
-      "shortid": "^2.2.13"
+      "randomstring": "^1.1.5",
     }
   }
 
@@ -595,6 +593,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/array-union/-/array-union-1.0.2.tgz#9a34410e4f4e3da23dea375be5be70f24778ec39"
     dependencies:
       array-uniq "^1.0.1"
+  
+  array-uniq@1.0.2:
+    version "1.0.2"
+    resolved "https://registry.yarnpkg.com/array-uniq/-/array-uniq-1.0.2.tgz#5fcc373920775723cfd64d65c64bef53bf9eba6d"
   
   array-uniq@^1.0.1, array-uniq@^1.0.3:
     version "1.0.3"
@@ -2993,6 +2995,12 @@ Lockfile:
     version "6.5.2"
     resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   
+  randomstring@^1.1.5:
+    version "1.1.5"
+    resolved "https://registry.yarnpkg.com/randomstring/-/randomstring-1.1.5.tgz#6df0628f75cbd5932930d9fe3ab4e956a18518c3"
+    dependencies:
+      array-uniq "1.0.2"
+  
   range-parser@~1.2.0:
     version "1.2.0"
     resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
@@ -3795,14 +3803,10 @@ Lockfile:
       y18n "^3.2.0"
 
 Trace: 
-  Error: https://registry.yarnpkg.com/randmonstring: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:62098:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:123085:22)
-      at emitTwo (events.js:126:13)
-      at Request.emit (events.js:214:7)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:124068:10)
-      at emitOne (events.js:116:13)
-      at Request.emit (events.js:211:7)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:123988:12)
-      at Object.onceWrapper (events.js:313:30)
-      at emitNone (events.js:111:20)
+  SyntaxError: E:\Work\Programming Gem\Backend\package.json: Unexpected token } in JSON at position 498
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:92:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:103:13
+      at <anonymous>
