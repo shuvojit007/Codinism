@@ -43,6 +43,10 @@ module.exports = {
     schemas: {
         nameSchema: Joi.object().keys({
             name: Joi.string().required()
+        }),
+        emailSchema: Joi.object().keys({
+            name:Joi.string().required(),
+            email:Joi.string().email().required()
         })
     
     }
