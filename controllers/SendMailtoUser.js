@@ -26,7 +26,7 @@ module.exports ={
            await transporter.sendMail(mailOptions, (err, info) => {
                 if (err) {
                     console.log(err);
-                    res.status(422).json({success: false});
+                    res.status(422).json(err);
                 } else {
                     
                     res.status(201).json({success: true});
