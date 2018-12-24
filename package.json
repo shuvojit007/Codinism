@@ -7,7 +7,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": " nodemon server/App.js"
+    "start": " node server/App.js"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
